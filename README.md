@@ -8,7 +8,7 @@ Dieses Projekt dient als Grundlage für alle Projekte mit BITS-i.<br />
 Folgende Bibliotheken inklusive der jeweiligen Voraussetzungen sind für dieses Projekt notwendig:
 - [thk_ir_receiver](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk_ir_receiver.git)
 - [thk_servo](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk_servo.git)
-- [bits_time_of_flight_controller](hhttps://git-ce.rwth-aachen.de/bits/bits_libs/bits_time_of_flight_controller.git)
+- [bits_time_of_flight_controller](https://git-ce.rwth-aachen.de/bits/bits_libs/bits_time_of_flight_controller.git)
 - [thk_led_strip_controller](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk-led-strip-controller.git)
 - [thk_imu](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk_imu.git)
 - [bits_motor_driver ](https://git-ce.rwth-aachen.de/bits/bits_libs/bits_motor_driver.git)
