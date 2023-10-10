@@ -12,7 +12,7 @@ Folgende Bibliotheken inklusive der jeweiligen Voraussetzungen sind für dieses 
 - [thk_led_strip_controller](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk-led-strip-controller.git)
 - [thk_imu](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk_imu.git)
 - [bits_motor_driver ](https://git-ce.rwth-aachen.de/bits/bits_libs/bits_motor_driver.git)
-- RF24 by TMRh20<br />
+- [RF24 by TMRh20](https://github.com/nRF24/RF24)<br />
 <br />
 
 ## **Installation:**
