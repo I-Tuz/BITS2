@@ -16,7 +16,7 @@
   
 
   Author:
-  <Hier kommt dein Name>    
+  <Hier Namen einfügen>    
 
 **************************************************/
 #define DEBUG_SERIAL
@@ -109,4 +109,3 @@ void setup(){
 void loop(){
 
 }
-
