@@ -5,9 +5,4 @@ void platzhalter(){
     // Dies ist nur ein Platzhalter.
 }
 
-
-
-
-
-
 #endif

@@ -41,6 +41,22 @@
 // #define DEBUG_IMU
 // #define DEBUG_COURSE
 
+#define DEBUG_SERIAL
+// #define WIFI_COMMUNICATION
+
+#ifdef DEBUG_SERIAL
+#define _println_(x) Serial.println(x)
+#define _print_(x) Serial.print(x)
+#else
+#ifdef WIFI_COMMUNICATION
+#define _println_(x) Serial3.println(x)
+#define _print_(x) Serial3.print(x)
+#else
+#define _println_(x)
+#define _print_(x)
+#endif
+#endif
+
 /* ************ *
  * Bibliotheken *
  * ************ */

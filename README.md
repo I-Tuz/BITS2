@@ -1,4 +1,4 @@
-# **BITS-i Bare Minimum Zyklus 1**
+# **BITS-i Bare Minimum**
 
 Dieses Projekt dient als Grundlage für alle Projekte mit BITS-i.<br />
 <br />
@@ -11,14 +11,14 @@ Folgende Bibliotheken inklusive der jeweiligen Voraussetzungen sind für dieses 
 - [bits_time_of_flight_controller](https://git-ce.rwth-aachen.de/bits/bits_libs/bits_time_of_flight_controller.git)
 - [thk_led_strip_controller](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk-led-strip-controller.git)
 - [thk_imu](https://git-ce.rwth-aachen.de/thk_libs/microcontrollers/thk_imu.git)
-- [bits_motor_driver ](https://git-ce.rwth-aachen.de/bits/bits_libs/bits_motor_driver.git)
+- [bits_motor_driver](https://git-ce.rwth-aachen.de/bits/bits_libs/bits_motor_driver.git)
 - [RF24 by TMRh20](https://github.com/nRF24/RF24)<br />
 <br />
 
 ## **Installation:**
 
-Um dieses Projekt verwenden können, muss dieses Repository geklont und die `bits-bare-minimum-zyklus-1.ino` mit der Arduino IDE geöffnet werden.
-Es muss darauf geachtet werden, dass der Ordner, in dem sich die `bits-bare-minimum-zyklus-1.ino` befindet, `bits-bare-minimum-zyklus-1` lautet.
+Um dieses Projekt verwenden können, muss dieses Repository geklont und die `bits-bare-minimum.ino` mit der Arduino IDE geöffnet werden.
+Es muss darauf geachtet werden, dass der Ordner, in dem sich die `bits-bare-minimum.ino` befindet, `bits-bare-minimum` lautet.
 
 ## **Anwendung:**
 

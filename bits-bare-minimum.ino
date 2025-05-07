@@ -12,28 +12,12 @@
   <Hier kommt der Name des Projekts>
 
   Description:
-  <Hier kommt was dieses Skript macht>
+  <Hier wird die Funktion dieses Skripts beschrieben>
   
-
   Author:
   <Hier Namen einfügen>    
 
 **************************************************/
-#define DEBUG_SERIAL
-// #define WIFI_COMMUNICATION
-
-#ifdef DEBUG_SERIAL
-#define _println_(x) Serial.println(x)
-#define _print_(x) Serial.print(x)
-#else
-#ifdef WIFI_COMMUNICATION
-#define _println_(x) Serial3.println(x)
-#define _print_(x) Serial3.print(x)
-#else
-#define _println_(x)
-#define _print_(x)
-#endif
-#endif
 
 #include "config.h"
 #include "basic_functions.h"
@@ -66,24 +50,9 @@ void setup(){
     imu.init();
     start = millis();
     _println_("Waiting for IMU getting ready. Please do not move the car!");
-    _print_("Waiting");
-    set_led_color(255,0,0);
-    for (int k=0; k<13; k++){
-        for (int i=0; i<FRONT_LED_NUM; i++){
-            front_strip.set_pixel_color(i,thk_LedStripController::Color(red, green, blue));
-            front_strip.show();
-            delay(500/FRONT_LED_NUM);
-            _print_(".");
-        }
-        for (int i=0; i<FRONT_LED_NUM; i++){
-            front_strip.set_pixel_color(i,thk_LedStripController::Color(0, 0, 0));
-            front_strip.show();
-            delay(500/FRONT_LED_NUM);
-            _print_(".");
-        }
-        red -= 20;  
-        green += 20;   
-    }
+
+    //Spätestens vor der letzten Abgabe auskommentieren, da sehr viel Zeit dabei verloren geht! 
+    initial_led_show();
 
     // Pin deklaration der Ultraschallsensoren
     pinMode(TRIGF, OUTPUT);

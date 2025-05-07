@@ -3,6 +3,7 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NOCOLOR='\033[0m'
+REDBACKGROUND='\033[31;7m'
 bold=$(tput bold)
 normal=$(tput sgr0)
 
@@ -24,10 +25,12 @@ echo -e "$RED"
 echo -e "__________________________________________________________________"
 echo -e "__________________________________________________________________"
 echo -e " "
-echo -e "\033[31;7m${bold}WICHTIG!!!!!\033[0m"
+echo -e "$REDBACKGROUND${bold}"
+echo -e 'WICHTIG!!!!!'
+echo -e "$NOCOLOR"
 echo -e " "
-echo -e "\033[31;7m${bold}Bitte entzippen Sie die Datei und kopieren Sie "
-echo -e "alle Ordner aus BITS_Bibliotheken in den Arduino Libraries Ordner\033[0m"
+echo -e "$REDBACKGROUND${bold}Bitte entzippen Sie die Datei und kopieren Sie "
+echo -e "alle Ordner aus BITS_Bibliotheken in den Arduino Libraries Ordner."
 echo -e "$RED"
 echo -e "__________________________________________________________________"
 echo -e "__________________________________________________________________"
