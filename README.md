@@ -30,6 +30,6 @@ Es muss darauf geachtet werden, dass der Ordner, in dem sich die `bits-bare-mini
 
 **`custom_functions.h`:** Hier gehören alle weiteren benötigten Funktionen hin, welche für das Projekt geschrieben wurden.
 
-**`bits-bare-minimum-zyklus-1.ino`:** Dies ist die Basis für ein Projekt mit *BITS-i*.
+**`bits-bare-minimum.ino`:** Dies ist die Basis für ein Projekt mit *BITS-i*.
 
 
