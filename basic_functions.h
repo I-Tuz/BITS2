@@ -117,29 +117,22 @@ void initial_led_show() {
   _println_("Waiting");
   set_led_color(255,0,0);
   const int frequencySteps[] = {500, 700, 900, 1100, 900, 700};
-  int counter = 0;
   for (int k=0; k<13; k++){
       for (int i=0; i<FRONT_LED_NUM; i++){
           front_strip.set_pixel_color(i,thk_LedStripController::Color(red, green, blue));
           front_strip.show();
-          tone(BUZZER_PIN, frequencySteps[counter%6], 500/FRONT_LED_NUM);
           delay(500/FRONT_LED_NUM);
           _print_(".");
-          counter++;
       }
       for (int i=0; i<FRONT_LED_NUM; i++){
           front_strip.set_pixel_color(i,thk_LedStripController::Color(0, 0, 0));
           front_strip.show();
-          tone(BUZZER_PIN, frequencySteps[counter%6], 500/FRONT_LED_NUM);
           delay(500/FRONT_LED_NUM);
           _print_(".");
-          counter++;
       }
       red -= 20;  
       green += 20;
-      counter++; 
   }
-  noTone(BUZZER_PIN);
 }
 
 #endif
