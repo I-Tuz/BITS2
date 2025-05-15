@@ -9,13 +9,14 @@
                              \|_________|          
                                                         
   Name:
-  <Hier kommt der Name des Projekts>
+  <BITS2 Projekt>
 
   Description:
-  <Hier wird die Funktion dieses Skripts beschrieben>
+  <BITS-i Fahrzeug Lernprojekt>
   
   Author:
-  <Hier Namen einfügen>    
+  <Ibragim Tuzhaev>
+  <Ibragim Tuzhaev>      
 
 **************************************************/
 
@@ -76,5 +77,5 @@ void setup(){
 }
 
 void loop(){
-
+  drive_forward_controlled_velocity();
 }
