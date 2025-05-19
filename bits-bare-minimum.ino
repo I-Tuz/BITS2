@@ -16,7 +16,11 @@
   
   Author:
   <Ibragim Tuzhaev>
-  <Ibragim Tuzhaev>      
+  <Michal Kwiatkowski>  
+  <Yunus Emre Giyim>
+  <delo mahmodo>
+  <david schneeberger >
+  <Maximilian Kaehm >      
 
 **************************************************/
 
