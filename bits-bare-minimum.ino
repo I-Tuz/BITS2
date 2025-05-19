@@ -9,7 +9,7 @@
                              \|_________|          
                                                         
   Name:
-  <BITS2 Projekt>
+  <BITS2 G18>
 
   Description:
   <BITS-i Fahrzeug Lernprojekt>
