@@ -12,7 +12,7 @@
   <BITS2 G18>
 
   Description:
-  <BITS-i Fahrzeug Lernprojekt>
+  <BITS-i Fahrzeug Lernprojekt von 2. u. 3.Semester>
   
   Author:
   <Ibragim Tuzhaev>
