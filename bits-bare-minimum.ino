@@ -19,7 +19,7 @@
   <Michal Kwiatkowski>  
   <Yunus Emre Giyim>
   <delo mahmodo>
-  <david schneeberger >
+  <david schneeberger>
   <Maximilian Kaehm >      
 
 **************************************************/
