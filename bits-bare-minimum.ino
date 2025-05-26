@@ -82,4 +82,6 @@ void setup(){
 
 void loop(){
   drive_forward_controlled_velocity();
+  readAndPlotDistances();
+
 }
