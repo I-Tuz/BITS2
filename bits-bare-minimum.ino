@@ -16,10 +16,10 @@
   
   Author:
   <Ibragim Tuzhaev>
-  <Michal Kwiatkowski>  
+  <Michal Kwiatkowski>
   <Yunus Emre Giyim>
-  <delo mahmodo>
-  <david schneeberger>
+  <Delo Mahmodo>
+  <David Schneeberger>
   <Maximillian Kaehm>      
 
 **************************************************/
@@ -82,6 +82,20 @@ void setup(){
 
 void loop(){
   drive_forward_controlled_velocity();
-  readAndPlotDistances();
 
+
+  // Ultraschall-Abstände messen
+  int us_front = us_get_distance(TRIGF, ECHOF);
+  int us_back = us_get_distance(TRIGB, ECHOB);
+
+  // Ausgabe im Serial Monitor
+  Serial.print("Ultraschall vorne: ");
+  Serial.print(us_front);
+  Serial.print(" cm, hinten: ");
+  Serial.print(us_back);
+  Serial.println(" cm");
+
+  delay(500); // Messrate (alle 0,5 Sekunden)
 }
+
+----------------------------------
