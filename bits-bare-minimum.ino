@@ -57,7 +57,7 @@ void setup(){
     _println_("Waiting for IMU getting ready. Please do not move the car!");
 
     //Spätestens vor der letzten Abgabe auskommentieren, da sehr viel Zeit dabei verloren geht! 
-    initial_led_show();
+    //initial_led_show();
 
     // Pin deklaration der Ultraschallsensoren
     pinMode(TRIGF, OUTPUT);
@@ -81,19 +81,14 @@ void setup(){
 }
 
 void loop(){
+ int distanz = us_get_distance(TRIGF,ECHOF);
+ 
+ 
   drive_forward_controlled_velocity();
-
-
-  // Ultraschall-Abstände messen
-  int us_front = us_get_distance(TRIGF, ECHOF);
-  int us_back = us_get_distance(TRIGB, ECHOB);
-
-  // Ausgabe im Serial Monitor
-  Serial.print("Ultraschall vorne: ");
-  Serial.print(us_front);
-  Serial.print(" cm, hinten: ");
-  Serial.print(us_back);
-  Serial.println(" cm");
-
-  delay(500); // Messrate (alle 0,5 Sekunden)
+ 
+  if (distanz <70){
+    ServoSteer.turn(135);
+    delay(700);
+    ServoSteer.turn(90);
+  }
 }
