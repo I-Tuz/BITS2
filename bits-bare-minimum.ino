@@ -97,5 +97,3 @@ void loop(){
 
   delay(500); // Messrate (alle 0,5 Sekunden)
 }
-
-----------------------------------
