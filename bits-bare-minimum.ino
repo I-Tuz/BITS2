@@ -84,11 +84,9 @@ void loop(){
  int distanz = us_get_distance(TRIGF,ECHOF);
  
  
-  drive_forward_controlled_velocity();
- 
-  if (distanz <70){
-    ServoSteer.turn(135);
-    delay(700);
-    ServoSteer.turn(90);
-  }
+  readAllToFSensors();
+  delay(500);
+
+  
+labyrinthFahrt();
 }
