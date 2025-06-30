@@ -84,7 +84,8 @@ void loop(){
  int distanz = us_get_distance(TRIGF,ECHOF);
  
  
-  readAllToFSensors();
+  readAllSensors();
+
   delay(500);
 
   
