@@ -89,7 +89,7 @@ uint8_t red, green, blue;
  * ************* */
 bits_MotorDriverTB6612FNG Motor;
 uint8_t velocity = 80;
-uint8_t velocity_backward = 80; // Geschwindigkeit für rückwährts fahren
+uint8_t velocity_backward = 70; // Geschwindigkeit für rückwährts fahren
 
 /* ********** *
  * Servomotor *
@@ -105,7 +105,7 @@ thk_ServoController ServoSteer(STEER_SERVO_PIN, STEER_START_POS, STEER_ANGLE_MAX
 const int SEARCH_SERVO_PIN = 12;
 const int SEARCH_ANGLE_MAX = 180;   // Muss eventuell angepasst werden!
 const int SEARCH_ANGLE_MIN = 0;     // Muss eventuell angepasst werden!
-const int SEARCH_START_POS = 90;    // Muss eventuell angepasst werden!
+const int SEARCH_START_POS = 86;    // Muss eventuell angepasst werden!
 thk_ServoController ServoSearch(SEARCH_SERVO_PIN, SEARCH_START_POS, SEARCH_ANGLE_MAX, SEARCH_ANGLE_MIN);
 
 float servo_steering_angle;

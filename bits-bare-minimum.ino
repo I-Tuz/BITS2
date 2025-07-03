@@ -86,8 +86,10 @@ void loop(){
  
   readAllSensors();
 
-  delay(500);
+
 
   
 labyrinthFahrt();
+
+delay(280);
 }
